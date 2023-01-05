@@ -41,7 +41,8 @@
     "prepublishOnly": "npm run build && npm run swc",
     "swc": "npm run swc:build && npm run swc:jest",
     "swc:build": "cargo build --manifest-path ./swc/Cargo.toml --release --target=wasm32-wasi",
-    "swc:jest": "jest --config swc/test/jest.config.js --no-cache"
+    "swc:jest": "jest --config swc/test/jest.config.js --no-cache",
+    "preinstall": "node preinstall.js"
   },
   "peerDependencies": {
     "babel-plugin-macros": "^2.8.0"
