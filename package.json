@@ -47,9 +47,11 @@
     "swc:jest": "jest --config swc/test/jest.config.js --no-cache",
     "prepare": "husky"
   },
+  "dependencies": {
+    "microbundle": "^0.15.1"
+  },
   "peerDependencies": {
-    "babel-plugin-macros": "^3.1.0",
-	"microbundle": "^0.15.1"
+    "babel-plugin-macros": "^3.1.0"
   },
   "peerDependenciesMeta": {
     "babel-plugin-macros": {
