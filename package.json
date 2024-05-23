@@ -40,7 +40,7 @@
     "build": "microbundle src/*.js",
     "format": "prettier --write",
     "ci": "npm run test -- --ci && npm run build",
-    "preinstall": "npm run build",
+    "postinstall": "npm run build",
     "prepublishOnly": "npm run build && npm run swc",
     "swc": "npm run swc:build && npm run swc:jest",
     "swc:build": "cargo build --manifest-path ./swc/Cargo.toml --release --target=wasm32-wasi",
